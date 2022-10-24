@@ -1,0 +1,311 @@
+
+:root{
+    --color:#F8F9FA;
+    --borde_titulos:greenyellow;
+    --colorheader:rgb(36, 115, 219);
+    --colorbtns:rgb(45, 89, 233);
+    --colorbnthover:rgb(4, 31, 119);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--color);
+}
+
+.header{
+    height: 270px;
+    width: 100%;
+    background-color: var(--colorheader);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-item{
+    text-align: center;
+}
+.header-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+
+.header_lista{
+    
+    height: 40px;
+    width: 90px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+
+.header_lista a{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 6px solid rgba(231, 8, 8, 0.753);
+}
+
+.header_lista a:hover{
+    color:black;
+    border-bottom: 6px solid red;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+                                         seccion sobre mi
+-------------------------------------------------------------------------------------------------------*/
+
+.titulo2{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-bottom: 7px solid  var(--borde_titulos);
+    font-size: 35px;
+}
+.seccion2_contenedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.contenedor-img img{
+    margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.seccion2_contenedor1 p{
+ margin-top: 20px;
+ padding: 10px 30px;
+}
+
+.seccion2_contenedor1 h3{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color:rgba(27, 93, 236, 0.842);
+   }
+
+   .iconos_redes{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+   }
+
+   .iconos_redes img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+   }
+
+/* -------------------------------------------------------------------------------------------------------
+                                        seccion 2.1
+-------------------------------------------------------------------------------------------------------*/
+
+.seccion2_1_container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+.seccion2_1_container_item{
+   
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seccion2_1_container_item p{
+padding: 0 40px;
+text-align: center;
+}
+.seccion2_1_container_item img{
+    height: 200px;
+    width: 280px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.705);
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------
+                                        seccion 3
+-------------------------------------------------------------------------------------------------------*/
+
+  .seccion3_container{
+  margin-top: 90px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+   }
+
+   .seccion3_container_item{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#E9E4DE;
+    border-radius: 10px;
+   }
+   .seccion3_container_item img{
+    width: 80px;
+    height: 90px;
+   }
+
+   footer{
+    height: 300px;
+    background-color: aquamarine;
+   }
+
+   /* -------------------------------------------------------------------------------------------------------
+                                        proyectos seccion 4
+-------------------------------------------------------------------------------------------------------*/
+
+.proyectos{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.proyectos_item{
+    height: 500px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 4px;
+}
+.proyectos_item p{
+text-align: center;
+}
+.proyectos_img{
+    margin-top: -24px;
+    width: 316px;
+    height: 306px;
+}
+
+
+.btn_demo{
+    height: 40px;
+    width: 90px;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: var(--colorbtns);
+    
+}
+.btn_demo:hover{
+    background-color: var(--colorbnthover);
+}
+.btn_demo a{
+    color:white;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+                                          media queris 
+-------------------------------------------------------------------------------------------------------*/
+@media (min-width:800px){
+    /* -------------------------------------------------------------------------------------------------------
+                                         header
+-------------------------------------------------------------------------------------------------------*/
+    .header{
+        height: 150px;
+        flex-direction: row;
+    }
+    .titulo2{
+        width: 35%;
+    }
+
+
+    /* -------------------------------------------------------------------------------------------------------
+                                         seccion sobre mi
+-------------------------------------------------------------------------------------------------------*/
+.container{
+    max-width: 1250px;
+    width: 90%;
+    
+    margin: 0 auto;
+}
+.seccion2_contenedor1 p{
+    margin-top: 0px;
+font-size: 24px;
+}
+
+.seccion2_contenedor1{
+    flex-direction: row;
+    height: calc(90vh - 100px);
+}
+
+/* -------------------------------------------------------------------------------------------------------
+                                        seccion 2.1
+-------------------------------------------------------------------------------------------------------*/
+
+.seccion2_1_container{
+flex-direction: row;
+gap: 40px;
+}
+    /* -------------------------------------------------------------------------------------------------------
+                                         seccion tres
+-------------------------------------------------------------------------------------------------------*/
+.seccion3_container{
+    gap: 25px;
+    flex-direction: row;
+}
+
+.seccion3_container_item{
+   
+    background-color:#E9E4DE;
+   }
+
+
+   /* -------------------------------------------------------------------------------------------------------
+                                         seccion tres
+-------------------------------------------------------------------------------------------------------*/
+
+.proyectos{
+    flex-direction: row;
+    /* border: 3px solid blue; */
+    margin-bottom: 50px;
+    
+}
+.proyectos_img{
+    margin-top: -15px;
+    width: 546px;
+    height: 300px;
+}
+   .proyectos_item{
+    /* border: 3px solid blue; */
+    height: 450px;
+    width: 550px;
+   }
+}
